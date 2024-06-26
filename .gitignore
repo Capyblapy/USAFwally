@@ -1,0 +1,9 @@
+# Project place file
+/USAFwally.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Packages (Like NPM)
+Packages/
