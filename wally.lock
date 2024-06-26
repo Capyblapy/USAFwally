@@ -10,7 +10,7 @@ dependencies = []
 [[package]]
 name = "remy/usafwally"
 version = "0.1.0"
-dependencies = [["Knit", "sleitnick/knit@1.7.0"]]
+dependencies = [["Knit", "sleitnick/knit@1.7.0"], ["ProfileService", "surnautica/profileservice@1.0.0"]]
 
 [[package]]
 name = "sleitnick/comm"
@@ -30,4 +30,9 @@ dependencies = []
 [[package]]
 name = "sleitnick/signal"
 version = "2.0.1"
+dependencies = []
+
+[[package]]
+name = "surnautica/profileservice"
+version = "1.0.0"
 dependencies = []
