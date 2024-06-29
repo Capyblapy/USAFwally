@@ -40,6 +40,8 @@ function DataService:KnitInit()
             Clicks = 0,
             Arrested = false,
             ArrestTime = 0,
+            TimeArrested = 0,
+            TimeLeft = os.time(),
         }
     )
 
@@ -64,6 +66,8 @@ function DataService:KnitInit()
             --   Roblox servers trying to load this profile at the same time:
             player:Kick() 
         end
+
+        print(self.Profiles[player])
     end
 
     -- Profile Init (start of defualt profile service code)
@@ -78,6 +82,7 @@ function DataService:KnitInit()
     Players.PlayerRemoving:Connect(function(player)
         local profile = self.Profiles[player]
         if profile ~= nil then
+            profile.Data.TimeLeft = os.time()
             profile:Release()
         end
     end)
